@@ -5,7 +5,7 @@ const bot = new commando.Client({
     commandPrefix: prefix
 });
 
-bot.login("NjkwNTY3Njk3ODg0MjUwMTgy.XnTTgg.4NMS4CQm1lzxbwpNHQe5OOc7ICE");
+bot.login(process.env.token);
 
 bot.on('ready',function(){
     console.log(`Bot is now online @ Zyro Network Discord, with ${bot.users.size} users.`);
